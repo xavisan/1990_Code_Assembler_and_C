@@ -1,0 +1,3 @@
+LoadGrScr(fh) ;
+
+    close( fh ) ;

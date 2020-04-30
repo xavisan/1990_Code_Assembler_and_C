@@ -3,13 +3,13 @@
  * Revision :
  * Release  : 1.05
  *
- * Programa para instalaciones de programas de ICR.
- * Fichero de configuraci¢n INSTALA.OPT
+ * Programa para instalaciones de programas de ICR. / Javier Sanchez
+ * Fichero de configuraciÂ¢n INSTALA.OPT
  * Primera linea indica numero de opciones
  * Linea segunda en adelante : Formato :
  * Fichero.BAT Descripcion (No superior a 36 Caracteres)
- *    ³
- *    ÀÄ> Longitud de 12 caracteres Maximo incluido "."
+ *    Â³
+ *    Ã€Ã„> Longitud de 12 caracteres Maximo incluido "."
  *
  *    Open_Window(10,60,3,15,0,1,0xDB);
  *
@@ -78,7 +78,7 @@ void main(void)
     pinta_pantalla();
     if((fichero=fopen("INSTALA.OPT","r"))==NULL) {
         printf("\n\n** ERROR DE CONFIGURACION **");
-        printf("\nFichero INSTALA.OPT de Instalaci¢n no encontrado");
+        printf("\nFichero INSTALA.OPT de InstalaciÂ¢n no encontrado");
         exit(1);
       }
       fscanf(fichero,"%d",&c_numero);  /* Lectura del numero de opciones */
@@ -92,14 +92,14 @@ void main(void)
         }
 
      /* Imprime el encuadre de opciones en pantalla */
-     _settextposition(6,11); printf("É");
-     for(x=1;x<43;++x) printf("Í");  printf("»");
+     _settextposition(6,11); printf("Ã‰");
+     for(x=1;x<43;++x) printf("Ã");  printf("Â»");
      for(x=1;x<c_numero+1;++x) {
         _settextposition(x+6,11);
-        printf("º                                          º");
+        printf("Âº                                          Âº");
        }
-       _settextposition(x+6,11); printf("È");
-       for(x=1;x<43;++x) printf("Í"); printf("¼");
+       _settextposition(x+6,11); printf("Ãˆ");
+       for(x=1;x<43;++x) printf("Ã"); printf("Â¼");
 
 
      /* Lee el fichero de opciones e imprime estas en pantalla */
@@ -137,8 +137,8 @@ pulsa_opcion(int dato) {
                _setcolor(0);
                _settextcolor(7);
                clrscr();
-               printf("Instalador de Aplicaciones - Revisi¢n 1.05 \n\n(C)opyright 1992 I.C.R, S.A.");
-               printf("\nc/Rambla Catalunya 60, 1§ 1¦\n Telf: 488.01.01\n08007 Barcelona (Spain)\n");
+               printf("Instalador de Aplicaciones - RevisiÂ¢n 1.05 \n\n(C)opyright 1992 I.C.R, S.A.");
+               printf("\nc/Rambla Catalunya 60, 1Â§ 1Â¦\n Telf: 488.01.01\n08007 Barcelona (Spain)\n");
                exit(1); }
 
 
@@ -183,7 +183,7 @@ pulsa_opcion(int dato) {
         _settextcolor(14);
         _settextposition(24,1);
         if(numero==109) {
-        _outtext("                [F1-Menu de Generaci¢n de BATS] - [ESC- Salir]     ");
+        _outtext("                [F1-Menu de GeneraciÂ¢n de BATS] - [ESC- Salir]     ");
         _outtext("             ");
           } else {
         _outtext (" [ESC] - Salir "); }
@@ -205,7 +205,7 @@ pulsa_opcion(int dato) {
     Fecha(1,60);
     _settextposition(1,20);
     _settextcolor(11);
-    sprintf(buffer,"Instalaci¢n (C)1992 I.C.R, S.A.");
+    sprintf(buffer,"InstalaciÂ¢n (C)1992 I.C.R, S.A.");
     _outtext(buffer);
     _settextcursor(0x2000);
 

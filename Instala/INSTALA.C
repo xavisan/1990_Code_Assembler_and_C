@@ -137,8 +137,7 @@ pulsa_opcion(int dato) {
                _setcolor(0);
                _settextcolor(7);
                clrscr();
-               printf("Instalador de Aplicaciones - Revisi¢n 1.05 \n\n(C)opyright 1992 I.C.R, S.A.");
-               printf("\nc/Rambla Catalunya 60, 1§ 1¦\n Telf: 488.01.01\n08007 Barcelona (Spain)\n");
+               printf("Instalador de Aplicaciones - Revisi¢n 1.05 \n.");
                exit(1); }
 
 
